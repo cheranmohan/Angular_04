@@ -1,0 +1,12 @@
+<div class="heading">Messages</div>
+<ul>
+	<li *ngFor="let mess of messages">{{mess.message}}
+		<div *ngIf="type == 'user'">{{mess.senderName}} to {{mess.reveiverId}}</div>
+		<div>{{mess.message}}</div>
+	</li>
+</ul>
+
+	<div class="chatbox">
+		<input type="text" [(ngModel)]='message' placeholder="Enter your message">
+		<button (click)='onClick(msg,type)'>Send</button>
+	</div>

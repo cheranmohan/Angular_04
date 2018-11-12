@@ -1,0 +1,12 @@
+<p>
+  Users
+</p>
+    <div class="columns">
+        <div class="user">
+            <ul>
+                <li *ngFor='let user of users' (click)="selectUser(user.userName)">
+                  {{user.userName}}
+                 </li>
+          </ul>
+    </div>
+ </div>

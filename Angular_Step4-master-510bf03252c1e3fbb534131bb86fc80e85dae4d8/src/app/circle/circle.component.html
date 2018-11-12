@@ -1,0 +1,13 @@
+<p>
+  Circles
+</p>
+<div class="columns">
+    <div class="cir">
+        <ul>
+            <li *ngFor='let circle of circles' (click)='selectCircle(circle.circleName)'>
+  
+                {{circle.circleName}}
+            </li>
+        </ul>
+    </div>
+</div>
